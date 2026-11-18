@@ -60,7 +60,7 @@ export default function Home() {
           ref={heroImg}
           src="/images/hero.jpg"
           alt="Kainos Wear campaign"
-          className="absolute inset-0 h-full w-full object-cover grayscale"
+          className="absolute inset-0 h-full w-full object-cover "
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/25 to-ink/80" />
 
@@ -155,7 +155,7 @@ export default function Home() {
           <img
             src="/images/lookbook3.png"
             alt="Editorial"
-            className="absolute inset-0 h-full w-full object-cover grayscale"
+            className="absolute inset-0 h-full w-full object-cover "
           />
         </div>
         <div className="flex flex-col justify-center bg-cream-deep px-6 py-20 sm:px-14 lg:px-20">
@@ -192,7 +192,7 @@ export default function Home() {
               <img
                 src="/images/lookbook1.png"
                 alt="Look 01"
-                className="h-full w-full object-cover grayscale transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
+                className="h-full w-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
               />
             </div>
             <p className="mt-3 eyebrow text-ash">Look 01 </p>
@@ -202,7 +202,7 @@ export default function Home() {
               <img
                 src="/images/lookbook2.jpg"
                 alt="Look 02"
-                className="h-full w-full object-cover grayscale transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
+                className="h-full w-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
               />
             </div>
             <p className="mt-3 eyebrow text-ash">Look 02 </p>
@@ -215,7 +215,7 @@ export default function Home() {
         <img
           src="/images/services.jpg"
           alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-30 grayscale"
+          className="absolute inset-0 h-full w-full object-cover opacity-30 "
         />
         <div className="absolute inset-0 bg-ink/70" />
         <div className="container-k relative z-10 flex flex-col items-start gap-8 py-24 sm:py-36">

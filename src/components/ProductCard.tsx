@@ -22,7 +22,7 @@ export default function ProductCard({ product }: Props) {
             src={product.image}
             alt={product.name}
             loading="lazy"
-            className="h-full w-full object-cover grayscale transition-transform duration-[1.1s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06]"
+            className="h-full w-full object-cover  transition-transform duration-[1.1s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06]"
           />
           <div className="pointer-events-none absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/10" />
 

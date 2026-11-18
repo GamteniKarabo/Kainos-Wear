@@ -3,6 +3,7 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 import Reveal from '../components/Reveal'
 import MaskText from '../components/MaskText'
 
+
 interface Service {
   title: string
   desc: string
@@ -77,7 +78,7 @@ export default function OtherServices() {
                 <img
                   src={s.image}
                   alt={s.title}
-                  className="absolute inset-0 h-full w-full object-cover grayscale opacity-70 transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover  opacity-70 transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-ink/10" />
                 <span className="absolute right-4 top-4 rounded-full border border-cream/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-cream/90">

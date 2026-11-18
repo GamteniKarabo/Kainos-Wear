@@ -54,7 +54,7 @@ export default function ProductDetail() {
             <img
               src={product.image}
               alt={product.name}
-              className="h-full w-full object-cover grayscale"
+              className="h-full w-full object-cover "
             />
             {product.badge && (
               <span className="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-ink">
@@ -91,11 +91,10 @@ export default function ProductDetail() {
                   <button
                     key={s}
                     onClick={() => setSize(s)}
-                    className={`h-11 w-11 rounded-full border text-xs font-medium transition-colors ${
-                      size === s
+                    className={`h-11 w-11 rounded-full border text-xs font-medium transition-colors ${size === s
                         ? 'border-ink bg-ink text-cream'
                         : 'border-line hover:border-ink'
-                    }`}
+                      }`}
                   >
                     {s}
                   </button>

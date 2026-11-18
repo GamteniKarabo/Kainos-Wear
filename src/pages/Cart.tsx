@@ -88,7 +88,7 @@ export default function Cart() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="h-full w-full object-cover grayscale"
+                    className="h-full w-full object-cover "
                   />
                 </Link>
                 <div className="flex flex-1 flex-col">

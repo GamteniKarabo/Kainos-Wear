@@ -39,7 +39,7 @@ export default function About() {
           <img
             src="/images/About.jpg"
             alt="Kainos Wear"
-            className="h-full w-full object-cover grayscale"
+            className="h-full w-full object-cover "
           />
         </Reveal>
         <Reveal delay={0.1}>
