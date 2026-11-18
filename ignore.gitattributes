@@ -1,0 +1,5 @@
+# Ignore generated build output (if you have committed dist)
+dist/ linguist-generated=true
+
+# Or, more directly, exclude all HTML files from language statistics
+*.html linguist-detectable=false
