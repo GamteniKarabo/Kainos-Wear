@@ -1,6 +1,20 @@
 import { Link } from 'react-router-dom'
 import { Instagram, Mail, ArrowUpRight, Facebook } from 'lucide-react'
 
+function openApp(scheme: string, fallback: string, timeout = 800): void {
+  window.location.href = scheme
+  const timer = window.setTimeout(() => {
+    window.location.href = fallback
+  }, timeout)
+  const cancel = () => window.clearTimeout(timer)
+  window.addEventListener('blur', cancel, { once: true })
+  document.addEventListener(
+    'visibilitychange',
+    () => { if (document.hidden) cancel() },
+    { once: true }
+  )
+}
+
 export default function Footer() {
   return (
     <footer className="bg-ink text-cream">
@@ -65,13 +79,35 @@ export default function Footer() {
               </button>
             </form>
             <div className="mt-8 flex gap-5 text-cream/70">
-              <a href="https://www.instagram.com/invites/contact/?utm_content=nko2fvu&lqvp=1k5mncnvajob1" aria-label="Instagram" className="hover:text-cream">
+              <a
+                href="https://www.instagram.com/invites/contact/?utm_content=nko2fvu&lqvp=1k5mncnvajob1"
+                aria-label="Instagram"
+                className="hover:text-cream"
+                onClick={(e) => {
+                  e.preventDefault()
+                  openApp(
+                    'instagram://user?username=kainos._wear',
+                    'https://www.instagram.com/invites/contact/?utm_content=nko2fvu&lqvp=1k5mncnvajob1'
+                  )
+                }}
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://mailto:christntshembhoeagle@gmail.com" aria-label="Email" className="hover:text-cream">
+              <a href="mailto:christntshembhoeagle@gmail.com" aria-label="Email" className="hover:text-cream">
                 <Mail className="h-5 w-5" />
               </a>
-              <a href="https://www.facebook.com/share/1JzpL2XnYz/?mibextid=wwXlfr" aria-label="Facebook" className="hover:text-cream">
+              <a
+                href="https://www.facebook.com/share/1JzpL2XnYz/?mibextid=wwXlfr"
+                aria-label="Facebook"
+                className="hover:text-cream"
+                onClick={(e) => {
+                  e.preventDefault()
+                  openApp(
+                    'fb://profile/kainoswear',
+                    'https://www.facebook.com/share/1JzpL2XnYz/?mibextid=wwXlfr'
+                  )
+                }}
+              >
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
