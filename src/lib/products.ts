@@ -20,7 +20,7 @@ export const products: Product[] = [
     price: 399,
     image: '/images/black K Tee.jpg',
     color: 'Black',
-    fit: 'Regular',
+    fit: 'Oversized',
     fabric: '300gsm combed cotton',
     description:
       'Features a striking monochrome classical sculputre graphic highlighted by a radiant starburst design, paired with the bold "KAINOS" wordmark and the tagline "Elegance Without Limits"',
@@ -30,7 +30,7 @@ export const products: Product[] = [
   {
     id: 'obsidian-premium',
     name: 'KAINOS Smoke',
-    price: 399.99,
+    price: 349.99,
     image: '/images/KAINOS Smoke B.jpg',
     color: 'Black',
     fit: 'Oversized',
@@ -109,7 +109,7 @@ export const products: Product[] = [
     price: 399.99,
     image: '/images/KAINOS KC w.jpg',
     color: 'White',
-    fit: 'Regular',
+    fit: 'Oversized',
     fabric: '300gsm pima cotton',
     description:
       'Warm ivory, cool confidence. Pima cotton with a hand-feel that earns the second glance.',

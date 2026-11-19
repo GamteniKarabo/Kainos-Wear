@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Mail, ArrowUpRight } from 'lucide-react'
+import { Instagram, Mail, ArrowUpRight, Facebook } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -65,11 +65,14 @@ export default function Footer() {
               </button>
             </form>
             <div className="mt-8 flex gap-5 text-cream/70">
-              <a href="#" aria-label="Instagram" className="hover:text-cream">
+              <a href="https://www.instagram.com/invites/contact/?utm_content=nko2fvu&lqvp=1k5mncnvajob1" aria-label="Instagram" className="hover:text-cream">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Email" className="hover:text-cream">
+              <a href="https://mailto:christntshembhoeagle@gmail.com" aria-label="Email" className="hover:text-cream">
                 <Mail className="h-5 w-5" />
+              </a>
+              <a href="https://www.facebook.com/share/1JzpL2XnYz/?mibextid=wwXlfr" aria-label="Facebook" className="hover:text-cream">
+                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
