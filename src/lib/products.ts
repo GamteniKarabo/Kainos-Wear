@@ -16,9 +16,9 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 'monochrome-tee',
-    name: 'KAINOS Tee',
+    name: 'KAINOS Kc',
     price: 399,
-    image: '/images/black K Tee.jpg',
+    image: '/images/KAINOS KC B.jpg',
     color: 'Black',
     fit: 'Oversized',
     fabric: '300gsm combed cotton',
@@ -92,7 +92,7 @@ export const products: Product[] = [
   },
   {
     id: 'noir-heavyweight',
-    name: 'KAINOS KC',
+    name: 'KAINOS Kc',
     price: 399.99,
     image: '/images/KAINOS KC OV W.jpg',
     color: 'White',
@@ -105,7 +105,7 @@ export const products: Product[] = [
   },
   {
     id: 'ivory-statement',
-    name: 'KAINOS KC',
+    name: 'KAINOS Kc',
     price: 399.99,
     image: '/images/KAINOS KC w.jpg',
     color: 'White',

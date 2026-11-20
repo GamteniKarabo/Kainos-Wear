@@ -86,7 +86,7 @@ export default function Footer() {
                 onClick={(e) => {
                   e.preventDefault()
                   openApp(
-                    'instagram://user?username=kainos._wear',
+                    'instagram://user?username=Kainos._wear',
                     'https://www.instagram.com/invites/contact/?utm_content=nko2fvu&lqvp=1k5mncnvajob1'
                   )
                 }}
